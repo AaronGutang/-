@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <math.h>
+#include <iostream>
+int main()
+{
+    std::cout << "Задание №1" << std::endl;
+    float a;
+    float b;
+    int S;
+    int P;
+    std::cout << "Введите значения сторон:";
+    std::cin >> a;
+    std::cin >> b;
+    S = a * b;
+    P = 2 * (a + b);
+    std::cout << "Значение площади:" << S << std::endl;
+    std::cout << "Значение периметра:" << P << std::endl;
+    std::cout << "Задание №2" << std::endl;
+    float d;
+    float pi;
+    float L;
+    pi = 3.14;
+    std::cout << "Введите значение диаметра:" << std::endl;
+    std::cin >> d;
+    L = pi * d;
+    std::cout << "Длина равна:" << L << std::endl;
+    std::cout << "Задание №3" << std::endl;
+    std::cout << "Введите значения чисел a и b:" << std::endl;
+    std::cin >> a;
+    std::cin >> b;
+    float arifm;
+    arifm = (a + b) / 2;
+    std::cout << "Среднее арифметическое чисел равно:" << arifm << std::endl;
+    std::cout << "Задание №4" << std::endl;
+    float m;
+    float n;
+    float summa;
+    float razn;
+    float proizv;
+    float chastn;
+    std::cout << "Введите два ненулевых числа:" << std::endl;
+    std::cin >> m;
+    std::cin >> n;
+    summa = pow(m, 2) + pow(n, 2);
+    razn = pow(m, 2) - pow(n, 2);
+    proizv = pow(m, 2) * pow(n, 2);
+    chastn = pow(m, 2) / pow(n, 2);
+    std::cout << "Значение суммы квадратов равно:" << summa << std::endl;
+    std::cout << "Значение разности квадратов равно:" << razn << std::endl;
+    std::cout << "Значение произведения квадратов равно:" << proizv << std::endl;
+    std::cout << "Значение частного квадратов равно:" << chastn << std::endl;
+    std::cout << "Задание №5" << std::endl;
+    std::cout << "Введите два ненулевых числа:" << std::endl;
+    std::cin >> m;
+    std::cin >> n;
+    summa = abs(m) + abs(n);
+    razn = abs(m) - abs(n);
+    proizv = abs(m) * abs(n);
+    chastn = abs(m) / abs(n);
+    std::cout << "Значение суммы модулей равно:" << summa << std::endl;
+    std::cout << "Значение разности модулей равно:" << razn << std::endl;
+    std::cout << "Значение произведения модулей равно:" << proizv << std::endl;
+    std::cout << "Значение частного модулей равно:" << chastn << std::endl;
+    return 0;
+}
